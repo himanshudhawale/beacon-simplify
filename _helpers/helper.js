@@ -147,7 +147,7 @@ router.get('/add',  async(req,res)=>{
                 discount : result[i].discount,
                 region : result[i].region,
                 price : result[i].price,
-                photo : base64_encode("/home/ubuntu/beacon-braintree/support/"+result[i].photo),
+                photo : base64_encode("/home/ubuntu/beacon-simplify/support/"+result[i].photo),
                 });
                 product.save();
 
