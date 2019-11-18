@@ -6,8 +6,8 @@ const User = db.User;
 const braintree = require('braintree');
 var Simplify = require("simplify-commerce"),
     client = Simplify.getClient({
-        publicKey: 'sbpb_OGI3MjliOTUtYWMyZS00ZTE4LWFmYTgtNTdkZDQ1NTBhZGFm',
-        privateKey: '6IpmiveAFIhKuVmp6CONqGsVnJKfuPc4C2q1endRa2l5YFFQL0ODSXAOkNtXTToq'
+        publicKey: '',
+        privateKey: ''
     });
 
 
@@ -172,7 +172,7 @@ async function update(id, userParam) {
           if (err){throw err;}
           console.log('user is: ', res)
 
-          
+
 
     });
 
