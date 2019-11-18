@@ -6,8 +6,8 @@ const User = db.User;
 const braintree = require('braintree');
 var Simplify = require("simplify-commerce"),
     client = Simplify.getClient({
-        publicKey: 'REMOVED',
-        privateKey: 'REMOVED'
+        publicKey: '',
+        privateKey: ''
     });
 
 
@@ -172,7 +172,7 @@ async function update(id, userParam) {
           if (err){throw err;}
           console.log('user is: ', res)
 
-          
+
 
     });
 
